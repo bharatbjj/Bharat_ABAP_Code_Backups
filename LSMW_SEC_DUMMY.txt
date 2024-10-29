@@ -1,0 +1,95 @@
+[Legacy System Migration Workbench]
+LSMW Version Number : 4.0.0
+LSMW Version Date : 31.08.2004
+R/3 Installation Number : 0020902802
+R/3 System Id : SEC
+R/3 Release : 757
+R/3 Client : 100
+R/3 Operating System : AIX
+R/3 Database System : HDB
+R/3 Hostname : elopak-sec
+User Id : BAJAJBH
+Date : 07.02.2024
+Time : 11:34:15
+Local Date : 07.02.2024
+Local Time : 11:34:15
+Local Timezone : CET
+
+[Project Information]
+[Project Name     ] : DUMMY
+[Project Text     ] : Dummy LSMW
+
+/SAPDMC/LSGPRO                DUMMY          BAJAJBH     20240206
+/SAPDMC/LSGPROT               EDUMMY          Dummy LSMW
+
+[Subproject Information]
+[Subproject       ] : DUMMY_LSMW
+[Subproject Text  ] : Dummy LSMWs
+
+/SAPDMC/LSGSUB                DUMMY          DUMMY_LSMW     BAJAJBH     20240206
+/SAPDMC/LSGSUBT               EDUMMY          DUMMY_LSMW     Dummy LSMWs
+
+[Object Information]
+[Object           ] : VEKP_UPDATE
+[Object Text      ] : Direct Update VEKP Fields
+
+/SAPDMC/LSOTXT                EDUMMY          DUMMY_LSMW     VEKP_UPDATE    Direct Update VEKP Fields
+/SAPDMC/LSOATT                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0109010000                                                                                                                                    00000083BAJAJBH     X BAJAJBH     20240206
+/SAPDMC/LSOSTR                DUMMY          DUMMY_LSMW     VEKP_UPDATE    INPUT_STR                     Input_structure                                                                           000101 00000000000000000000
+/SAPDMC/LSOFLD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    INPUT_STR                     NO_OF_RECORDS                 0001N   010No of Records to Process
+/SAPDMC/LSOREL                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       INPUT_STR                     20240206BAJAJBH
+/SAPDMC/LSORUL                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __BEGIN_OF_RECORD__           DFBAJAJBH     20240207                                                                                                                        00000000
+/SAPDMC/LSORUL                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             DMBAJAJBH     20240207                                                                                                                        00000000
+/SAPDMC/LSORUL                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000__END_OF_TRANSACTION__                                      DFBAJAJBH     20240207                                                                                                                        00000000
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __BEGIN_OF_RECORD__           0001CMS_RE_STR_OBJ_HDR_DATA = INIT_CMS_RE_STR_OBJ_HDR_DATA.                 BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000__END_OF_TRANSACTION__                                      0001transfer_transaction.                                                   BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0001**Update VEKP Table Fields                                              BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0002                                                                        BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0003*NO_OF_RECORDS comes from the File (eg. 10000 records at a time)        BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0004*File can contain multiple rows with NO_OF_RECORDS to process           BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0005*in each instance. For example, if the File contains (without *):       BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0006*10000                                                                  BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0007*10000                                                                  BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0008*10000                                                                  BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0009*The LSMW will process total 30000 records in 3 runs of 10000s each     BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0010                                                                        BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0011DATA(lv_text) = |Processing Batch : { g_cnt_input_str } |.              BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0012                                                                        BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0013CALL FUNCTION 'SAPGUI_PROGRESS_INDICATOR'                               BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0014  EXPORTING                                                             BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0015    text = lv_text.                                                     BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0016                                                                        BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0017*Select Records with Incorrect Date format(YYYY-MM-DDTHH:MM:SS:000Z)    BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0018SELECT FROM vekp                                                        BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0019  FIELDS venum, /lpp/production_ts                                      BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0020  WHERE /lpp/production_ts LIKE '%T%'                                   BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0021  INTO TABLE @DATA(lt_vekp)                                             BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0022  UP TO @input_str-no_of_records ROWS.                                  BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0023                                                                        BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0024IF sy-subrc = 0.                                                        BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0025* Build the Correct Date format : YYYY-MM-DD HH:MM:SS                   BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0026  LOOP AT lt_vekp ASSIGNING FIELD-SYMBOL(<ls_vekp>).                    BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0027    <ls_vekp>-/lpp/production_ts+10(1) = ' '.                           BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0028    <ls_vekp>-/lpp/production_ts+19 = ''.                               BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0029                                                                        BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0030*   Update the DB Table field                                           BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0031    UPDATE vekp                                                         BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0032       SET /lpp/production_ts = <ls_vekp>-/lpp/production_ts            BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0033     WHERE venum = <ls_vekp>-venum.                                     BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0034  ENDLOOP.                                                              BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0035                                                                        BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0036  IF sy-subrc = 0.                                                      BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0037*   Commit Updates to Database                                          BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0038    COMMIT WORK.                                                        BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0039  ENDIF.                                                                BAJAJBH     20240207
+/SAPDMC/LSOCOD                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0000CMS_RE_STR_OBJ_HDR_DATA       __END_OF_RECORD__             0040ENDIF.                                                                  BAJAJBH     20240207
+/SAPDMC/LSOFIL                DUMMY          DUMMY_LSMW     VEKP_UPDATE    DUMMY_DUMMY_LSMW_VEKP_UPDATE.lsmw.read                                                                                  DUMMY_DUMMY_LSMW_VEKP_UPDATE.lsmw.conv
+/SAPDMC/LSOINP                DUMMY          DUMMY_LSMW     VEKP_UPDATE    0001FEC:\Users\bajajbh\OneDrive - Elopak\MyDesktop\dummy.txt                                                                  Dummy File                    0000X 000000                                 X      X  X
+/SAPDMC/LSOINS                DUMMY          DUMMY_LSMW     VEKP_UPDATE    INPUT_STR                     0001
+/SAPDMC/LSOPAR                DUMMY          DUMMY_LSMW     VEKP_UPDATE                FROMLINE_CONV                 0000000000
+/SAPDMC/LSOPAR                DUMMY          DUMMY_LSMW     VEKP_UPDATE                TOLINE_CONV                   0000010000
+/SAPDMC/LSOPAR                DUMMY          DUMMY_LSMW     VEKP_UPDATE                FROMLINE_READ                 0000000001
+/SAPDMC/LSOPAR                DUMMY          DUMMY_LSMW     VEKP_UPDATE                TOLINE_READ                   0000010000
+/SAPDMC/LSOPAR                DUMMY          DUMMY_LSMW     VEKP_UPDATE    BAJAJBH     WILDCARDVALUE
+
+[Documentation    ]
