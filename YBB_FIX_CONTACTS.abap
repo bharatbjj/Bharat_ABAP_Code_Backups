@@ -33,11 +33,6 @@ SELECTION-SCREEN : BEGIN OF BLOCK b01 WITH FRAME TITLE TEXT-t01.
   PARAMETERS: p_file TYPE rlgrap-filename MEMORY ID file MODIF ID set OBLIGATORY.
 SELECTION-SCREEN END OF BLOCK b01.
 
-SELECTION-SCREEN : BEGIN OF BLOCK b02 WITH FRAME TITLE TEXT-t02.
-*Test Mode
-  PARAMETERS : p_tab TYPE flag AS CHECKBOX DEFAULT abap_true.
-SELECTION-SCREEN END OF BLOCK b02.
-
 AT SELECTION-SCREEN ON VALUE-REQUEST FOR p_file.
   PERFORM open_file_path CHANGING p_file.
 
@@ -54,12 +49,7 @@ START-OF-SELECTION.
 *&---------------------------------------------------------------------*
 FORM main .
 
-  IF p_tab = abap_true.
-    SELECT * FROM ybb_contact_raw INTO TABLE gt_excl_file.
-  ELSE.
-    PERFORM read_excel_file.
-  ENDIF.
-
+  PERFORM read_excel_file.
   PERFORM format_contacts.
   PERFORM display_list.
 
@@ -104,11 +94,6 @@ FORM read_excel_file .
       MESSAGE l_var_text TYPE 'I' DISPLAY LIKE 'E'.
   ENDTRY.
 
-  IF  gt_excl_file IS NOT INITIAL .
-    DELETE FROM ybb_contact_raw.
-    MODIFY ybb_contact_raw FROM TABLE gt_excl_file.
-    COMMIT WORK.
-  ENDIF.
 ENDFORM.
 *&---------------------------------------------------------------------*
 *& Form format_contacts
@@ -124,7 +109,6 @@ FORM format_contacts .
   DATA : lt_split TYPE string_t,
          lv_phone TYPE text50,
          lv_len   TYPE i.
-
 
   LOOP AT gt_excl_file ASSIGNING FIELD-SYMBOL(<ls_excl_file>).
 
@@ -189,7 +173,6 @@ FORM format_contacts .
 
   DELETE ADJACENT DUPLICATES FROM gt_final COMPARING fullname mobile.
 
-
 ENDFORM.
 *&---------------------------------------------------------------------*
 *& Form display_list
@@ -208,7 +191,6 @@ FORM display_list .
         lr_functions  TYPE REF TO cl_salv_functions,
         lr_columns    TYPE REF TO cl_salv_columns_table,
         lr_column     TYPE REF TO cl_salv_column_table.
-
 
 * ALV Display
   TRY.
