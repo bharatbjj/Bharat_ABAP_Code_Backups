@@ -1,10 +1,10 @@
 FORM process_main.
 
   DATA : l_tab_data  TYPE STANDARD TABLE OF g_typ_data,
-		 l_wa_data   LIKE LINE OF 		    l_tab_data,
+		     l_wa_data   LIKE LINE OF 		    l_tab_data,
          l_var_total TYPE i,
          l_var_count TYPE i,
-		 l_var_limit TYPE i VALUE '500'.	" Interval for timer reset
+		     l_var_limit TYPE i VALUE '500'.	" Interval for timer reset
   
 **Get the Total number of records  
   DESCRIBE TABLE l_tab_data LINES l_var_total.
